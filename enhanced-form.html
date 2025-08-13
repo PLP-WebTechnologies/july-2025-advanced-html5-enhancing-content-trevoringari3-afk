@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page & Form</title>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Enhanced Page</h1>
+    <p>This page demonstrates lists, tables, media, and an HTML5 form with native validation.</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>SEO Optimization</li>
+            <li>Content Creation</li>
+        </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Price Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Design</td>
+                    <td>2 Weeks</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>1 Week</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Content Creation</td>
+                    <td>3 Days</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Media Showcase</h2>
+        <figure>
+            <img src="pexels-gilles-33405063.jpg" alt="Sample Image" style="max-width:100%;" width="200" length="300">
+            <figcaption>Sample Project Image</figcaption>
+        </figure>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <video controls width="400">
+            <source src="14117576_1920_1080_60fps.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- HTML5 Form Section -->
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post" novalidate>
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Service Preferences</legend>
+                <label for="service">Choose a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Select--</option>
+                    <option value="web_design">Web Design</option>
+                    <option value="seo">SEO Optimization</option>
+                    <option value="content">Content Creation</option>
+                </select>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact_email" name="contact_method" value="email" required>
+                <label for="contact_email">Email</label>
+                <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                <label for="contact_phone">Phone</label>
+            </fieldset>
+
+            <!-- Additional Message -->
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
